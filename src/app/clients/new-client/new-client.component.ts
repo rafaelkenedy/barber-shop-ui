@@ -1,4 +1,4 @@
-import { Component, Inject } from '@angular/core';
+import { Component, Inject, OnDestroy } from '@angular/core';
 import { SERVICES_TOKEN } from '../../services/service.token';
 import { IClientService } from '../../services/api-client/clients/iclients.service';
 import { ClientsService } from '../../services/api-client/clients/clients.service';
@@ -19,14 +19,16 @@ import { Router } from '@angular/router';
     { provide: SERVICES_TOKEN.SNACKBAR, useClass: SnackbarManagerService },
   ],
 })
-export class NewClientComponent {
+export class NewClientComponent implements OnDestroy {
   private httpSubscription?: Subscription;
 
   constructor(
     @Inject(SERVICES_TOKEN.HTTP.CLIENT)
-    private readonly snackBarManager: ISnackbarManagerService,
-    @Inject(SERVICES_TOKEN.SNACKBAR)
     private readonly httpService: IClientService,
+
+    @Inject(SERVICES_TOKEN.SNACKBAR)
+    private readonly snackBarManager: ISnackbarManagerService,
+
     private readonly router: Router
   ) {}
 

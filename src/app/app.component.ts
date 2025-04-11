@@ -4,7 +4,7 @@ import { ClientFormComponent } from "./clients/components/client-form/client-for
 
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet, ClientFormComponent],
+  imports: [RouterOutlet],
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss'
 })

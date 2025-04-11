@@ -1,93 +1,107 @@
 [
-    {
-      "httpRequest": {
-        "method": "GET",
-        "path": "/clients/[0-9]+"
-      },
-      "httpResponse": {
-        "body": {
-          "id": 1,
-          "name": "Juquinha",
-          "email": "juquinha@juquinha.com.br",
-          "phone": "12957440099"
-        },
-        "statusCode": 200,
-        "headers": {
-          "Content-Type": "application/json"
-        }
-      }
+  {
+    "httpRequest": {
+      "method": "GET",
+      "path": "/clients/[0-9]+"
     },
-    {
-      "httpRequest": {
-        "method": "GET",
-        "path": "/clients/2"
+    "httpResponse": {
+      "body": {
+        "id": 1,
+        "name": "Juquinha",
+        "email": "juquinha@juquinha.com.br",
+        "phone": "12957440099"
       },
-      "httpResponse": {
-        "body": {
-          "id": 2,
-          "name": "Mariazinha",
-          "email": "mariazinha@maria.com.br",
-          "phone": "11987654321"
-        },
-        "statusCode": 200,
-        "headers": {
-          "Content-Type": "application/json"
-        }
-      }
-    },
-    {
-      "httpRequest": {
-        "method": "GET",
-        "path": "/clients/3"
-      },
-      "httpResponse": {
-        "body": {
-          "id": 3,
-          "name": "Zé da Esquina",
-          "email": "ze@esquina.com.br",
-          "phone": "11912345678"
-        },
-        "statusCode": 200,
-        "headers": {
-          "Content-Type": "application/json"
-        }
-      }
-    },
-    {
-      "httpRequest": {
-        "method": "GET",
-        "path": "/clients/4"
-      },
-      "httpResponse": {
-        "body": {
-          "id": 4,
-          "name": "Pedrinho",
-          "email": "pedrinho@padaria.com.br",
-          "phone": "12999887766"
-        },
-        "statusCode": 200,
-        "headers": {
-          "Content-Type": "application/json"
-        }
-      }
-    },
-    {
-      "httpRequest": {
-        "method": "GET",
-        "path": "/clients/5"
-      },
-      "httpResponse": {
-        "body": {
-          "id": 5,
-          "name": "Aninha",
-          "email": "aninha@flores.com.br",
-          "phone": "1188554477"
-        },
-        "statusCode": 200,
-        "headers": {
-          "Content-Type": "application/json"
-        }
+      "statusCode": 200,
+      "headers": {
+        "Content-Type": "application/json"
       }
     }
-  ]
-  
+  },
+  {
+    "httpRequest": {
+      "method": "GET",
+      "path": "/clients/2"
+    },
+    "httpResponse": {
+      "body": {
+        "id": 2,
+        "name": "Mariazinha",
+        "email": "mariazinha@maria.com.br",
+        "phone": "11987654321"
+      },
+      "statusCode": 200,
+      "headers": {
+        "Content-Type": "application/json"
+      }
+    }
+  },
+  {
+    "httpRequest": {
+      "method": "GET",
+      "path": "/clients/3"
+    },
+    "httpResponse": {
+      "body": {
+        "id": 3,
+        "name": "Zé da Esquina",
+        "email": "ze@esquina.com.br",
+        "phone": "11912345678"
+      },
+      "statusCode": 200,
+      "headers": {
+        "Content-Type": "application/json"
+      }
+    }
+  },
+  {
+    "httpRequest": {
+      "method": "GET",
+      "path": "/clients/4"
+    },
+    "httpResponse": {
+      "body": {
+        "id": 4,
+        "name": "Pedrinho",
+        "email": "pedrinho@padaria.com.br",
+        "phone": "12999887766"
+      },
+      "statusCode": 200,
+      "headers": {
+        "Content-Type": "application/json"
+      }
+    }
+  },
+  {
+    "httpRequest": {
+      "method": "GET",
+      "path": "/clients/5"
+    },
+    "httpResponse": {
+      "body": {
+        "id": 5,
+        "name": "Aninha",
+        "email": "aninha@flores.com.br",
+        "phone": "1188554477"
+      },
+      "statusCode": 200,
+      "headers": {
+        "Content-Type": "application/json"
+      }
+    }
+  },
+  {
+    "httpRequest": {
+      "method": "POST",
+      "path": "/clients"
+    },
+    "httpResponse": {
+      "statusCode": 201,
+      "body": {
+        "message": "Cliente cadastrado com sucesso"
+      },
+      "headers": {
+        "Content-Type": "application/json"
+      }
+    }
+  }
+]
